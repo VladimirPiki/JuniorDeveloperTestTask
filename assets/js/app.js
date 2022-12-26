@@ -1,5 +1,7 @@
-var app = angular.module('myApp', ["ngRoute"]);
-app.controller('myCtrl', function($scope) {
-  $scope.firstName = "Vladimir";
-  $scope.lastName = "Krstevski";
-});
+console.log("ova e app.js aj da vidime")
+$(document).on('click', "#addproduct", function () {
+    window.location.href = "view/addproduct.php";
+})
+$(document).on('click', "#cancel", function () {
+    window.location.href = "../index.php";
+})
